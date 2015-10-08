@@ -1,0 +1,11 @@
+{
+  "server":{
+    "url":"localhost",
+    "port":"8080"
+  },
+  "debug": true,
+  "plugins":{
+    "good":true,
+    "yar":true
+  }
+}

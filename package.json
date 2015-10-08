@@ -1,0 +1,44 @@
+{
+  "name": "include-modules",
+  "version": "0.1.0",
+  "description": "A simple node module for easily  include modules that exist in separate files.",
+  "main": "index.js",
+  "keywords": [
+    "require",
+    "modules"
+  ],
+  "scripts": {
+    "test": "mocha test"
+  },
+  "engine": {
+    "node": ">=0.10.*"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidenq/include-modules"
+  },
+  "bugs": {
+    "url": "https://github.com/davidenq/include-modules/issues"
+  },
+  "author": {
+    "name": "David Núñez",
+    "email": "davip@live.com",
+    "url": "https://github.com/davidenq"
+  },
+  "license": {
+    "type": "MIT"
+  },
+  "maintainers": {
+    "name": "David Núñez",
+    "email": "davip@live.com"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "hoek": "^2.16.3",
+    "underscore": "^1.8.3"
+  }
+}
