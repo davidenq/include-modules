@@ -14,7 +14,7 @@ $ [sudo] npm install include-modules --save
 ```
 ## How to use
 
-The following example attaches directory-path to a simple  Node.JS app
+The following example attaches include-modules to a simple  Node.JS app
 
 #####_Directory structure:_
 ```
@@ -107,8 +107,8 @@ gives the following output
 
 ## Support
 
-If you need help using directory-path, or have found a bug, please create an issue on the
-<a href="https://github.com/davidenq/directory-path/issues" target="_blank">GitHub repo</a>.
+If you need help using include-modules, or have found a bug, please create an issue on the
+<a href="https://github.com/davidenq/include-modules/issues" target="_blank">GitHub repo</a>.
 
 ## License
 
@@ -223,7 +223,7 @@ A la salida se obtiene:
 
 ## Soporte
 
-Si necesitas ayuda usando el módulo directory-path, o si encuentras un bug, por favor créa un issue en <a href="https://github.com/davidenq/directory-path/issues" target="_blank">GitHub repo</a>.
+Si necesitas ayuda usando el módulo include-modules, o si encuentras un bug, por favor créa un issue en <a href="https://github.com/davidenq/include-modules/issues" target="_blank">GitHub repo</a>.
 
 ## Licencia
 

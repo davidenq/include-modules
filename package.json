@@ -1,6 +1,6 @@
 {
   "name": "include-modules",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple node module for easily  include modules that exist in separate files.",
   "main": "index.js",
   "keywords": [
