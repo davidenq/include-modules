@@ -1,3 +1,4 @@
+'use strict';
 /**
  * Created by Davip on 07/01/2015.
  */
@@ -6,17 +7,14 @@
 const _ = require('underscore');
 const assert  = require('chai').assert;
 const include   = require('..');
-
-let paths;
-let modules;
-
   
 describe('There are not files nested', function(){
+    let modules;
 
     before(function(){
 
         // relative path of a empty folder
-        paths = {
+        const paths = {
             'empty':'./examples/empty'
         }
         
@@ -40,20 +38,14 @@ describe('There are not files nested', function(){
 
 describe('There are files nested', function(){
 
-    before(function(){
-
-        // relative path of a empty folder
-        paths = {
-            'development':'./examples/development',
-            'default':'./examples/default'
-        }
-        
-        modules = include.modules(paths, __dirname);
-    });
-
     describe('should be the same name the name property defined in paths variable and result object', function(){
 
         it('should be the same name', function(){
+            const paths = {
+                'development':'./examples/development',
+                'default':'./examples/default'
+            };
+            const modules = include.modules(paths, __dirname);            
             assert.equal(Object.getOwnPropertyNames(paths)[0], Object.getOwnPropertyNames(modules)[0]);
             assert.equal(Object.getOwnPropertyNames(paths)[1], Object.getOwnPropertyNames(modules)[1]);
         });
