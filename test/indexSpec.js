@@ -3,12 +3,12 @@
  */
 
 'use strict';
-var _ = require('underscore');
-var assert  = require('chai').assert;
-var include   = require('..');
+const _ = require('underscore');
+const assert  = require('chai').assert;
+const include   = require('..');
 
-var paths;
-var modules;
+let paths;
+let modules;
 
   
 describe('There are not files nested', function(){
