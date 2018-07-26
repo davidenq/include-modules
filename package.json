@@ -1,6 +1,6 @@
 {
   "name": "include-modules",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A simple node module for easily  include modules that exist in separate files.",
   "main": "index.js",
   "keywords": [
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "chai": "^3.3.0",
-    "mocha": "^2.3.3"
+    "mocha": "^5.2.0"
   },
   "repository": {
     "type": "git",
@@ -38,7 +38,7 @@
   },
   "readmeFilename": "README.md",
   "dependencies": {
-    "hoek": "^2.16.3",
+    "hoek": "^5.0.3",
     "underscore": "^1.8.3"
   }
 }
