@@ -5,8 +5,13 @@ English version
 ## include-modules
 
 
-A simple node module for easily  include modules js or configuration files with format json that exist in separate files. In other words, make auto-require.
+A simple node module for easily include modules js or configuration files with format json that exist in separate files (make auto-require).
 This module return a JavaScript Object Literal that contain all modules and configuration files.
+
+
+## Changelog
+
+- This module was updated and now support auto-require from a single file.
 
 ## Installation
 ```bash
@@ -34,6 +39,8 @@ The following example attaches include-modules to a simple  Node.JS app
 │   │   │   ├── test.xml
 │   ├── index.html
 ```
+
+## Auto-require multiple files
 index.js
 ```js
 
@@ -55,7 +62,7 @@ var paths = {
 };
 
 
-var modules = load.modules(paths, __dirname);
+var modules = load.modules(paths, __dirname, "");
 
 console.log(modules);
 
@@ -104,6 +111,47 @@ gives the following output
 
 
 ```
+## Auto-require single file
+
+index.js
+```js
+
+var load = require('include-modules');
+
+
+/*
+var paths = {
+  'whatever name you'd like to use': 'relative folder path that contain the configuration files or modules',
+  'whatever name you'd like to use': 'other relative folder path that contain the configuration files or modules'
+}
+*/
+
+var paths = { 
+  'single':'./examples/single',
+};
+
+
+var modules = load.modules(paths, __dirname, "example.json");
+
+console.log(modules);
+
+
+
+```
+Run the app:
+```
+node index.js
+```
+gives the following output
+```bash
+{
+    single: {
+        example: {
+            config: "data-example"
+        }
+    }
+}
+
 
 ## Support
 
